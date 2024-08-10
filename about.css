@@ -1,0 +1,16 @@
+/* About Us Page Styles */
+.about-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.about-content h1 {
+    text-align: center;
+}
+
+.about-content p {
+    line-height: 1.6;
+}

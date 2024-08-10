@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo img {
+    height: 45px; /* Adjust based on your logo size */
+    margin-left: 20px;
+    border-radius: 100%;
+}
+
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+}
+
+.navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar-menu a:hover {
+    text-decoration: underline;
+}
+/*Sign In Button*/
+.signin-button{
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 25px
+}
+.signin-button:hover{
+    background-color: #0056b3;
+}
+
+/* Sign Up Button */
+.signup-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.signup-button:hover {
+    background-color: #0056b3;
+}
+
+/* Adjusted content margin for fixed navbar */
+body {
+    margin-top: 60px; /* Adjust based on navbar height */
+}
+
+/* About Us Page Styles */
+.about-container {
+    max-width: 800px;
+    margin: 60px auto 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+.about-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}

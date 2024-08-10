@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home.css">
+    <script defer src="languageSwitcher.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </a>
+        <ul class="navbar-menu">
+            <li><a href="index.html" data-translate-key="home">Home</a></li>
+            <li><a href="contact.html" data-translate-key="contact">Contact Us</a></li>
+            <li><a href="product.html" data-translate-key="categories">Categories</a></li>
+            <li><a href="about.html" data-translate-key="about">About Us</a></li>
+            <li><a href="cart.html" class="cart-link" data-translate-key="myCart">My Cart</a></li>
+        </ul>
+        <a href="signup.html" class="signup-button" data-translate-key="signup">Sign Up</a>
+    </nav>
+    
+    <div class="language-switcher">
+        <button id="en">English</button>
+        <button id="nep">नेपाली</button>
+    </div>
+
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1 data-translate-key="welcome">Welcome to Our Website</h1>
+            <p data-translate-key="intro">Explore our products and services with ease.</p>
+            <a href="product.html" class="btn-primary" data-translate-key="shopNow">Shop Now</a>
+        </div>
+    </header>
+
+    <section class="featured-products">
+        <h2 data-translate-key="featuredProducts">Featured Products</h2>
+        <div class="product-carousel">
+            <!-- Example Product Item -->
+            <div class="product-item">
+                <img src="images/product1.jpg" alt="Product 1">
+                <h3>Product Name 1</h3>
+                <p>$20.00</p>
+                <a href="product.html" class="btn-secondary" data-translate-key="viewDetails">View Details</a>
+            </div>
+            <!-- Add more product items here -->
+        </div>
+    </section>
+
+    <section class="services">
+        <h2 data-translate-key="ourServices">Our Services</h2>
+        <div class="service-card">
+            <img src="images/service1.jpg" alt="Service 1">
+            <h3>Service 1</h3>
+            <p>Providing top-notch service for our clients.</p>
+        </div>
+        <div class="service-card">
+            <img src="images/service2.jpg" alt="Service 2">
+            <h3>Service 2</h3>
+            <p>Expert support and solutions tailored to your needs.</p>
+        </div>
+        <!-- Add more service cards here -->
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <ul class="footer-menu">
+            <li><a href="privacy.html" data-translate-key="privacyPolicy">Privacy Policy</a></li>
+            <li><a href="terms.html" data-translate-key="termsConditions">Terms & Conditions</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

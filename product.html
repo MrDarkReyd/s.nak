@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="product.css">
+    <script defer src="filter.js"></script>
+    <script defer src="cart.js"></script>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </a>
+        <ul class="navbar-menu">
+            <li><a href="index.html" data-translate-key="home">Home</a></li>
+            <li><a href="contact.html" data-translate-key="contact">Contact Us</a></li>
+            <li><a href="product.html" data-translate-key="categories">Categories</a></li>
+            <li><a href="about.html" data-translate-key="about">About Us</a></li>
+            <li><a href="cart.html" class="cart-link" data-translate-key="myCart">My Cart</a></li>
+        </ul>
+        <a href="signup.html" class="signup-button" data-translate-key="signup">Sign Up</a>
+    </nav>
+
+    <!-- Product Categories Dropdown -->
+    <div class="dropdown">
+        <button class="dropdown-button" data-translate-key="selectCategory">Select Category</button>
+        <div class="dropdown-content">
+            <a href="#" data-category="all" data-translate-key="all">All</a>
+            <a href="#" data-category="fruits" data-translate-key="fruits">Fruits</a>
+            <a href="#" data-category="vegetables" data-translate-key="vegetables">Vegetables</a>
+            <a href="#" data-category="dairy" data-translate-key="dairy">Dairy</a>
+            <a href="#" data-category="snacks" data-translate-key="snacks">Snacks</a>
+            <a href="#" data-category="pickle" data-translate-key="pickle">Pickle</a>
+        </div>
+    </div>
+
+    <button class="btn-upload"><a href="upload.html" data-translate-key="addProduct">Add Your Product</a></button>
+
+    <!-- Product Grid -->
+    <div class="product-grid">
+        <!-- Example Product Item -->
+        <div class="product-item" data-category="fruits">
+            <img src="images/apple.jpg" alt="Apple">
+            <h3>Apple</h3>
+            <p>$1.50</p>
+            <button class="add-to-cart" data-id="1" data-name="Apple" data-price="$1.50" data-image="images/apple.jpg" data-translate-key="addToCart">Add to Cart</button>
+        </div>
+        <!-- Add more product items here -->
+    </div>
+</body>
+</html>

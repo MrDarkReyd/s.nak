@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="checkout.css">
+    <script defer src="cart.js"></script>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="HaatMArt Green Logo.png" alt="Logo">
+        </a>
+        <ul class="navbar-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="cart.html" class="cart-link">Cart</a></li>
+        </ul>
+        <a href="signup.html" class="signup-button">Sign Up</a>
+    </nav>
+
+    <!-- Checkout Form -->
+    <div class="checkout-container">
+        <h1>Checkout</h1>
+        <div class="checkout-summary">
+            <div class="cart-items"></div>
+            <div class="cart-total">Total: $</div>
+        </div>
+        <form class="checkout-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            <label for="payment">Payment Method:</label>
+            <img src="qr.jpg" alt="QR code" class="qr"> <br>
+            <button type="submit" class="checkout-button">Submit Order</button>
+        </form>
+        <a href="index.html" class="cancel-button">Cancel</a>
+    </div>
+</body>
+</html>
