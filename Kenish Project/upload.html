@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload Your Product</title>
+    <title>Upload Product</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="upload.css">
     <script defer src="upload.js"></script>
 </head>
 <body>
-    <!-- Navigation Menu -->
-    <nav class="navbar">
-        <a href="index.html" class="logo">
-            <img src="HaatMArt Green Logo.png" alt="Logo">
-        </a>
-        <ul class="navbar-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="Product.html">Products</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="cart.html" class="cart-link">My Cart</a></li>
-        </ul>
-        <a href="signup.html" class="signup-button">Sign Up</a>
-    </nav>
+         <!-- Navigation Menu -->
+<nav class="navbar">
+    <a href="index.html" class="logo">
+        <img src="/images/Logo/Haat Mart Green logo.png" alt="Logo">
+    </a>
+    <ul class="navbar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="cart.html" class="cart-link">My Cart</a></li>
+    </ul>
+    <!-- Circular Profile Picture -->
+    <a href="profile.html" class="profile-link">
+        <img src="/images/Profile/stock pfp.jpg" alt="Profile Picture" class="profile-picture">
+    </a>
+</nav>
 
-    <!-- Upload Form -->
-    <div class="container">
+    <div class="upload-container">
         <h1>Upload Your Product</h1>
         <form id="uploadForm">
             <label for="productName">Product Name:</label>
@@ -39,8 +42,11 @@
                 <option value="pickle">Pickle</option>
             </select>
 
-            <label for="productPrice">Price:</label>
-            <input type="text" id="productPrice" name="productPrice" required>
+            <label for="productPrice">Price (Rs):</label>
+            <input type="number" id="productPrice" name="productPrice" step="0.01" required>
+
+            <label for="productKg">Weight (kg):</label>
+            <input type="number" id="productKg" name="productKg" step="0.01" required>
 
             <label for="productImage">Product Image:</label>
             <input type="file" id="productImage" name="productImage" accept="image/*" required>
@@ -51,7 +57,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
     </footer>
 </body>
 </html>

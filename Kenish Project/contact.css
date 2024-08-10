@@ -1,74 +1,198 @@
-/* General Styles */
+/* Apply Flexbox Layout to Ensure Footer at Bottom */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure Main Content Expands to Fill Available Space */
+.main-content {
+    flex: 1;
+}
+
+/* Styling for Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+}
+
+/* Navigation Menu (Ensure Consistency) */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo img {
+    height: 40px;
+}
+
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-menu a:hover {
+    text-decoration: underline;
+}
+
+.signup-button {
+    color: white;
+    background-color: #007bff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.signup-button:hover {
+    background-color: #0056b3;
+}
+.language-switcher {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.language-switcher button {
+    background-color: #ddd;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+/* General Styles for Contact Us Page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo img {
+    height: 40px;
+}
+
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-menu a:hover {
+    text-decoration: underline;
+}
+
+.signup-button {
+    color: white;
+    background-color: #007bff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.signup-button:hover {
+    background-color: #0056b3;
+}
+
 .contact-container {
-    padding: 2rem;
     max-width: 800px;
-    margin: 0 auto;
-    background-color: #f9f9f9;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.contact-info {
-    margin-bottom: 2rem;
-}
-
-.contact-info h2 {
-    margin-bottom: 0.5rem;
-    color: #333;
-}
-
-.contact-info p {
-    margin: 0.5rem 0;
-    font-size: 1rem;
-}
-
-.contact-form {
-    background-color: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form h2 {
-    margin-bottom: 1rem;
+.contact-container h1 {
+    margin-top: 0;
     color: #333;
 }
 
 .contact-form label {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
     font-weight: bold;
-    color: #333;
+    color: #555;
 }
 
-.contact-form input, 
+.contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
-.contact-form button {
-    background-color: #28a745;
-    color: #fff;
+.contact-form textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: white;
     border: none;
-    padding: 0.75rem 1.5rem;
+    padding: 10px 20px;
     border-radius: 4px;
-    font-size: 1rem;
     cursor: pointer;
+    font-size: 16px;
 }
 
-.contact-form button:hover {
-    background-color: #218838;
+.submit-button:hover {
+    background-color: #0056b3;
 }
 
-/* Footer Styles (Inherited from the main stylesheet) */
-.footer {
+footer {
     background-color: #333;
-    color: #fff;
+    color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
     width: 100%;
 }

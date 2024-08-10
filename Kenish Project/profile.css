@@ -45,34 +45,77 @@ body {
     text-decoration: underline;
 }
 
-/* About Container Styling */
-.about-container {
+/* Profile container styling */
+.profile-container {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-height: 400px; /* Ensure a minimum height for the container */
 }
 
-/* About Us Header Styling */
-.about-container h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
+/* Profile header styling */
+.profile-header {
     text-align: center;
 }
 
-.about-container h2 {
-    font-size: 22px;
+.profile-picture-large {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-size: 24px;
+    margin: 10px 0 5px;
+}
+
+.profile-email {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Profile info styling */
+.profile-info {
     margin-top: 20px;
+}
+
+.profile-info h2 {
+    font-size: 20px;
     border-bottom: 2px solid #ddd;
     padding-bottom: 10px;
 }
 
-.about-container p {
+.profile-info p {
     font-size: 16px;
     line-height: 1.6;
     color: #333;
+}
+
+/* Profile actions styling */
+.profile-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-logout {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #f44336;
+}
+
+.btn-logout:hover {
+    background-color: #e53935;
 }
 
 /* Footer styling */

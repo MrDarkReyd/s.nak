@@ -1,3 +1,53 @@
+/* Navigation Menu Styling */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo img {
+    height: 40px;
+}
+
+/* Navigation Menu Items */
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Profile Picture */
+.profile-link {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures image fits within the circle */
+    border: 2px solid white; /* Optional: Adds a border around the profile picture */
+}
+
 /* General Reset */
 * {
     margin: 0;
