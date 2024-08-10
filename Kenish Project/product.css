@@ -126,6 +126,23 @@ body {
     font-size: 1.25rem;
     color: #ff6347;
 }
+/* Product Item Styles */
+.product-item button.remove-product {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dc3545;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.product-item button.remove-product:hover {
+    background-color: #c82333;
+}
+
 
 .add-to-cart {
     background-color: #ff6347;

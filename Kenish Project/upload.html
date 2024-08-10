@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload Product</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Upload Your Product</title>
     <link rel="stylesheet" href="upload.css">
+    <script defer src="upload.js"></script>
 </head>
 <body>
     <!-- Navigation Menu -->
@@ -16,39 +16,42 @@
         <ul class="navbar-menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="categories.html">Categories</a></li>
+            <li><a href="Product.html">Products</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="cart.html" class="cart-link">My Cart</a></li>
         </ul>
         <a href="signup.html" class="signup-button">Sign Up</a>
     </nav>
 
-    <!-- Product Upload Form -->
-    <main>
-        <h1>Add Your Product</h1>
-        <div class="form-container">
-            <h2>Upload Your Product</h2>
-            <form>
-                <label for="productName">Product Name</label>
-                <input type="text" id="productName" name="productName">
-        
-                <label for="productImage">Product Image</label>
-                <input type="file" id="productImage" name="productImage">
-        
-                <label for="productDescription">Product Description</label>
-                <textarea id="productDescription" name="productDescription"></textarea>
-        
-                <button type="submit">Upload Product</button>
-            </form>
-        </div>
-        
-    </main>
+    <!-- Upload Form -->
+    <div class="container">
+        <h1>Upload Your Product</h1>
+        <form id="uploadForm">
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" name="productName" required>
+
+            <label for="productCategory">Category:</label>
+            <select id="productCategory" name="productCategory" required>
+                <option value="fruits">Fruits</option>
+                <option value="vegetables">Vegetables</option>
+                <option value="dairy">Dairy</option>
+                <option value="snacks">Snacks</option>
+                <option value="pickle">Pickle</option>
+            </select>
+
+            <label for="productPrice">Price:</label>
+            <input type="text" id="productPrice" name="productPrice" required>
+
+            <label for="productImage">Product Image:</label>
+            <input type="file" id="productImage" name="productImage" accept="image/*" required>
+
+            <button type="submit">Upload Product</button>
+        </form>
+    </div>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
     </footer>
-
-    <script src="upload.js"></script>
 </body>
 </html>
