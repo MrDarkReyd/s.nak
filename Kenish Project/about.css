@@ -21,6 +21,8 @@ body {
 /* Logo styling */
 .navbar .logo img {
     height: 40px;
+    border-radius: 100%;
+    margin-left: 30px;
 }
 
 /* Navbar menu styling */
